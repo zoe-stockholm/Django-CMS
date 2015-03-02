@@ -1,0 +1,10 @@
+<br><br>
+<h2>Please type in the URL you want to make shorten</h2>
+
+<form action="/en/shortener/shorten_url/" method="post">
+    {% csrf_token %}
+    URL Input:
+    <input type="text" name="url_input" size="100">
+    <br><br>
+    <input type="submit" value="Submit" id="submit"/>
+</form>
